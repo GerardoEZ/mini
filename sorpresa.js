@@ -1,4 +1,4 @@
-const questionText = "¿Quieres ser mi San Valentín? 💘";
+const questionText = "¿Quieres estar conmigo? 💘";
 const questionElement = document.getElementById("question");
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
