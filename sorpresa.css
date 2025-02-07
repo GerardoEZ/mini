@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+}
+
+h1 {
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+#yesBtn {
+    background: #ff4081;
+    color: white;
+}
+
+#yesBtn:hover {
+    transform: scale(1.1);
+    background: #e91e63;
+}
+
+#noBtn {
+    background: #b0bec5;
+    color: white;
+}
+
+#noBtn:hover {
+    transform: scale(1.1);
+    background: #78909c;
+}
+
+#responseMessage {
+    font-size: 22px;
+    color: white;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Fondo de partículas */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1;
+}
